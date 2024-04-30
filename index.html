@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Lucas Nock</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#mywork">My Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Lucas Nock</div> 
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="about" onclick="toggleMenu()">About</a></li>
+        <li><a href="mywork" onclick="toggleMenu()"> My Work</a></li>
+        <li><a href="contact" onclick="toggleMenu()">Contact Me</a></li>
+    </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/Untitled design.png" alt="Lucas Nock profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I'm</p>
+            <h1 class="title"> Lucas Nock</h1>
+            <p class="section__text_p2"> Computer Science Major</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                 onclick="window.open('assets/Newest Resume.pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1"
+                onclick="location.href='./#contact'">
+            Contact Info
+        </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedln Profile"
+                class="icon" onclick="location.href='https://linkedin.com/'" >
+               <img src="./assets/github.png" alt="My Github profile"
+               class="icon"
+               onclick="location.href='https://github.com'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title"> About ME</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/About-me.png"
+                 alt="Profile Picture"
+                 class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png"
+                         alt="Experience Icon"
+                         class="icon">
+                         <h3>My Work</h3>
+                         <p>2+ years <br /> IT Intern</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>Senior at Kean University <br /> Computer Science Major</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p> 
+                        Hi I am Lucas Nock, a Senior student at Kean University
+                        I am currently working towards a BS in Computer Science. I am also a Resident Assistant on
+                        campus who works with students to point them in the right direction
+                        Outside of school I enjoy spending time with friends and family, working out and riding my
+                        motorcycle. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#mywork'">
+    </section>
+    <section id="mywork">
+        <p class="section__text__p1"> This Is</p>
+        <h1 class="title"> My Work</h1>
+        <div class="mywork-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="mywork-sub-title">Programming Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>CSS</h3>
+                                <p>Beginner</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Java Script</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>C</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="mywork-sub-title"> IT Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Hardware</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Tableu</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Linux</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Network</h3>
+                                <p>Intermediate</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>Software</h3>
+                                <p>Advanced</p>
+                             </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png"
+                             alt=" Experience Icon"
+                             class="icon">
+                             <div>
+                                <h3>PHP</h3>
+                                <p>Basic</p>
+                             </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#myWork'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email Icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:nockl@kean.edu">Email Me</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" 
+                alt="LinkedIn Icon"
+                class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/lucas-nock-83183a195/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Lucas Nock. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
