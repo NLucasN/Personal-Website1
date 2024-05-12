@@ -1,0 +1,92 @@
+@media screen and (max-width: 1400px) {
+    /* Your existing styles */
+}
+
+@media screen and (max-width: 1200px) {
+    /* Your existing styles */
+}
+
+@media screen and (max-width: 600px) {
+    /* Additional adjustments for mobile devices */
+    #profile {
+        height: auto; /* Reset height to auto for responsiveness */
+        margin-bottom: 2rem; /* Adjust margin for spacing */
+    }
+
+    .about-containers {
+        flex-wrap: wrap; /* Wrap about containers for smaller screens */
+        margin-top: 0; /* Reset margin top */
+    }
+
+    /* Adjustments for navigation */
+    #desktop-nav {
+        display: none; /* Hide desktop navigation */
+    }
+
+    #hamburger-nav {
+        display: flex; /* Display hamburger navigation */
+    }
+
+    /* Adjustments for my work section */
+    #mywork,
+    .mywork-details-container {
+        margin-top: 2rem; /* Adjust margin for spacing */
+    }
+
+    /* Adjustments for sections */
+    section,
+    .section-container {
+        height: auto; /* Reset height to auto for responsiveness */
+        margin: 0 5%; /* Adjust margins for spacing */
+    }
+
+    .section__pic-container {
+        width: 100%; /* Make section pic container full width */
+        height: auto; /* Reset height to auto for responsiveness */
+        margin: 0 auto 2rem; /* Adjust margin for spacing */
+    }
+
+    /* Adjustments for contact section and footer */
+    #contact,
+    footer {
+        height: auto; /* Reset height to auto for responsiveness */
+        margin-bottom: 2rem; /* Adjust margin for spacing */
+    }
+
+    /* Adjustments for text size */
+    article {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .contact-info-container p,
+    .nav-links li a {
+        font-size: 1rem; /* Adjust font size for readability */
+    }
+
+    .mywork-sub-title {
+        font-size: 1.25rem; /* Adjust font size for readability */
+    }
+
+    .logo {
+        font-size: 1.5rem; /* Adjust font size for readability */
+    }
+
+    .section__text__p2 {
+        font-size: 1.25rem; /* Adjust font size for readability */
+    }
+
+    .title {
+        font-size: 2rem; /* Adjust font size for readability */
+    }
+
+    /* Adjustments for alignment */
+    .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 0.5rem; /* Adjust gap between navigation links */
+        text-align: center; /* Center align navigation links */
+    }
+
+    .section__text {
+        text-align: justify; /* Justify text for better readability */
+    }
+}
